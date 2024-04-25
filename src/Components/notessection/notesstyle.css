@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+.notes-section {
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background: #dae5f5;
+  font-family: Roboto, sans-serif;
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 768px) {
+  .arrow {
+    display: none;
+  }
+  .notes-section {
+    position: static;
+    width: 100%;
+  }
+}
+
+.notes-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: #001f8b;
+  color: white;
+  padding: 30px;
+  font-size: 25px;
+}
+
+.group-name {
+  font-size: 30px;
+}
+
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #f0f;
+}
+
+/* Styles for the notes body */
+.notes-body {
+  overflow-y: auto; /* Enable vertical scrolling when needed */
+  scrollbar-width: none; /* Hide scrollbar */
+}
+
+.note-body {
+  background-color: white;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 21px;
+  font-family: Roboto, sans-serif;
+  word-wrap: break-word; 
+}
+
+.note-time {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  color: #353535;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 09px;
+  letter-spacing: 3px;
+}
+
+.dot {
+  background-color: black;
+  border-radius: 50%;
+  height: 5px;
+  width: 5px;
+}
+
+.notes-input {
+  background-color: #001f8b;
+  border-bottom-left-radius: 10px;
+  position: relative;
+}
+
+/* Styles for the textarea */
+.notes-input textarea {
+  width: calc(100% - 40px);
+  max-height: 200px;
+  height: auto; 
+  border-radius: 10px;
+  resize: vertical;
+  margin: 20px;
+  padding: 20px;
+  outline: none;
+  font-size: 25px;
+  overflow-y: auto; /* Enable vertical scrolling when needed */
+  overflow-x: hidden; /* Hide horizontal overflow */
+}
+
+/* Styles for the send button */
+.send {
+  position: absolute;
+  right: 50px;
+  bottom: 50px;
+  font-size: 24px;
+  color: gray;
+  cursor: pointer;
+}
+
+.send-icon {
+  font-size: 37px;
+}

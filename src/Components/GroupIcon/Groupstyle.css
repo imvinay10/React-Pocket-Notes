@@ -1,0 +1,93 @@
+.container1 {
+  display: flex;
+  width: 100%;
+  background-color: white;
+  overflow-y: scroll;
+  height: 80%;
+  justify-content: center;
+  padding-top: 3rem;
+  padding-left: 4rem;
+  padding-bottom: 0rem;
+  scrollbar-width: none;
+}
+
+p {
+  font-size: 1.5rem;
+  padding: 20px;
+  font-weight: bold;
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+
+.left {
+  width: 95%;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.profile-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.profile-icon {
+  width: 70px;
+  height: 70px;
+  background-color: #f0f;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  /* font-weight: bold; */
+  font-size: 30px;
+}
+
+.profile-container p {
+  margin-left: 10px;
+}
+
+.group {
+  display: flex;
+  align-items: center;
+  padding: 25px 50px;
+  cursor: pointer;
+  height: 60px;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.active {
+  background-color: #2f2f2f2b;
+}
+
+@media screen and (max-width: 768px) {
+  .container1 {
+    height: auto;
+    padding-top: 2rem;
+  }
+
+  .left {
+    width: 100%;
+    gap: 0.5rem;
+  }
+
+  .profile-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+
+  .profile-container p {
+    margin-left: 8px;
+    font-size: 14px;
+  }
+
+  .group {
+    padding: 20px 40px;
+    height: 50px;
+  }
+}
