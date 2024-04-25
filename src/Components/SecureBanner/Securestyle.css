@@ -51,10 +51,9 @@ h1{
 
 .ptag-of-secure-banner {
   color: #292929;
+  font-size: medium;
   /* font-weight: 550; */
 }
-
-/* Responsive design */
 
 @media only screen and (min-width: 700px) {
   .container {
